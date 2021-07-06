@@ -1,0 +1,188 @@
+body{
+  background-color:grey;
+}
+#video-grid {
+display: flex;
+flex-wrap:wrap;
+}
+video{
+  height:300px;
+  width:400px;
+  margin-left: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+button{
+  border-radius: 10px;
+  width:100px;
+  align-items: center;
+}
+.audios{
+  background-color: #00008B;
+}
+.chat-containers{
+  background-color: #e4e6eb
+
+}
+.videos-containers{
+  background-color: #242526;
+  border-radius: 10px;
+  height:90%;
+  width: 90%;
+}
+.chat-boxes{
+  background-color:#EBE9EE;
+  border-radius: 4px;
+  width:10vh;
+  height:10vh;
+  float:right;
+}
+.border-top {
+    border-top: 1px solid #dee2e6;
+}
+.msteams-clone{
+  display: flex;
+  height: 100vh;
+  background-color: #110C14;
+}
+.video-sections{
+  flex: 0.76;
+}
+.meting-controls{
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+}
+.chat-sections{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  flex:0.24;
+  margin: 0px;
+  /*new addition*/
+}
+.screensharings-allows{
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+width:90px;
+align-items: center;
+height:50px;
+}
+.chat-sectionsareas{
+  background-color:#E6EBF5;
+  height: 90vh;
+  overflow: scroll;
+  border-radius:4px
+}
+h1 h4{
+  margin: 20px;
+  text-align: center;
+}
+#selectedbestclasshere{
+  display: block;
+}
+.meting-controls{
+  background-color:#212225;
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  height:auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.leavemeetingssss
+{display: inline;
+}
+.meting-controls button{
+  margin: 4px;
+}
+
+.itemsrequired{
+ margin-left:20px;
+ margin-right:20px;
+}
+.classesnavbars{
+  margin-top:20px
+}
+.adds{
+  margin: 4px;
+  margin-bottom: 40px;
+  position:absolute;
+  background-color: #E6EBF5;
+  bottom:30px;
+  display: inline-block;
+margin-right: 0px;
+  display:flex
+}
+h4{
+  margin: 4px;
+  text-align:center;
+
+}
+.styledisplay{
+display:none;
+}
+.small{
+  margin-left: 4px;
+}
+div .chatboxes{
+  background-color:#DEE6F5;
+  padding: 4px;
+  margin: 20px;
+  border-radius: 5px;
+}
+#buttonclasses{
+  border-radius:20px;
+  width:auto;
+  height:auto;
+  margin-bottom: auto;
+  border:0px;
+  background-color: #2E2E2E;
+  color:#e4e6eb
+}
+#buttonclasses:hover{
+  background-color: dimGray;
+  padding: auto;
+}
+.microphonesmute{
+color:#e4e6eb
+}
+.videosmute{
+  color:#e4e6eb;
+}
+button{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.classbutton{
+background-color:#212225;
+color:#e4e6eb;
+}
+#buttonclasses.mute{
+background-color: red;
+}
+.yuppssss:active{
+  background-color:lightgrey;
+}
+#datetimecheckdevices{
+  color:lightgrey;
+}
+.smallerss{
+  color:grey;
+  font-size: 0.8rem;
+text-align: right;
+}
+.messagesent{
+  color: black;
+  font-size: 1rem;
+}
+.leavemeetingssss{
+  background-color: red;
+}
+.leavemeetingssss:hover{
+  background-color: red;
+  justify-content: flex-end;
+color:yellow;}
