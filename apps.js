@@ -22,7 +22,7 @@ app.use(bodyparser.urlencoded(
   {
     exxtended:true
   }));
-mongoose.connect("/*removed due to privacy breach*/");
+mongoose.connect("/*removed due to privacy*/");
 const userschema=new mongoose.Schema({
   email:String,
   password:String
