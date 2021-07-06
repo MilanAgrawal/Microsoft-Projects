@@ -2,7 +2,7 @@ const socket=io('/')
 const myPeer= new Peer()
 const videoGrid = document.getElementById("video-streaming");/*the video element to which the video stream is to be added*/
 const myVideo = document.createElement("video");
-myVideo.muted = true;
+myVideo.muted = true;//not hear our voice echoing back 
 let username;
 let myVideoStream;
 var getUserMedia =
@@ -71,6 +71,7 @@ objectss.keyup((e)=>{
     buttonss.click();
   }
 })
+//when the users add any chat messages and click on the send button or press enter key ,then if it is empty message they get an alert, else the messages are sent to everyone via web sockets
 buttonss.on('click',function(){
   console.log(objectss.val())
   if(objectss.val()==""){
@@ -84,35 +85,29 @@ else
 }
 })
 
-const obje=$('.classbutton')
-obje.on('click',function(){
-alert("https://warm-falls-47559.herokuapp.com/"+ROOM_ID)
-})
 /*add the socket.disconnected event here*/
 socket.on('broadcastingss',messages=>{
 console.log(messages);
   const date=new Date()
-  o=date.getHours()+":"+date.getMinutes();
+  o=date.getHours()+":"+date.getMinutes();//date is appended to the messages and are added to the chatboxes
 const chatboxclassessadderss=$(".chat-sectionsareas");
 chatboxclassessadderss.append(`<div class="chatboxes"><div class="messagesent">${messages}</div><div class="smallerss">${o}<div></div>`)})
-/*Share link option provides the link to the room and allows new users to join the call by using the url
-<i class="fas fa-video-slash"></i>*/
-/*<i class="fas fa-microphone-slash"></i>*/
+
 $("#yoee").on('click',function(){
   $(".displaybox").toggleClass('styledisplay');
-})
+})//function for displaying and hiding the notepad in the chat area
 
 function doMute (){
   document.querySelector('.microphonesmute').innerHTML = `<i class="fas fa-microphone"></i>`;
 document.querySelector('.microphonesmute').classList.remove("mute")
-}
+}//allowing user to  add some styles to the buttons when muted
 
 function doUnmute (){
   document.querySelector('.microphonesmute').classList.add("mute")
   document.querySelector('.microphonesmute').innerHTML = `<i class="unmute fas fa-microphone-slash"></i><span></span>`;
-
+//allowing user to add some styles to the buttons when unmuted
 }
-
+//unmute and mute microphone when mute button is clicked
 function togglemuteUnmute () {
   const enabled = myVideoStream.getAudioTracks()[0].enabled;
   if (enabled) {
@@ -123,6 +118,7 @@ function togglemuteUnmute () {
     myVideoStream.getAudioTracks()[0].enabled = true;
   }
 }
+//show and close video when video button is clicked
 function togglevideo(){
   const enabled = myVideoStream.getVideoTracks()[0].enabled;
   if (enabled) {
@@ -147,9 +143,9 @@ function copyText() {
 function StopVideo (){
   document.querySelector('.videosmute').innerHTML = `<i class="fas fa-video"></i>`;
 document.querySelector('.videosmute').classList.remove("mute")
-}
+}//styles to video button
 
 function PlayVideo (){
   document.querySelector('.videosmute').innerHTML = `<i class="stop fas fa-video-slash"></i>`;
 document.querySelector('.videosmute').classList.add("mute")
-}
+}//styles to video button
