@@ -24,7 +24,7 @@ when new user joins our room we allow our video and audio stream to be shared wi
 when someone calls ,we answer back giving our video stream and responding to the stream sent by them
 
 The send button in chat box sends the chat messages to the server and then it is broadcasted to all the users in the same room and is appended to the list items of ul.
-
+#### real time chats and notes during the meeting
 Allowing the users to have personalized notes during meeting by having a textarea which can be hidden and displayed in the chat box and also contains an emoji picker which is created using emojionearea npm package
 
 Copy link option provides the link to the room and allows new users to join the call by using the url ,it allows the user to copy the link to the clipboard and share with the other users.
