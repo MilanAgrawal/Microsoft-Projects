@@ -22,7 +22,7 @@ app.use(bodyparser.urlencoded(
   {
     exxtended:true
   }));
-mongoose.connect("mongodb+srv://milan_2001:Milan@2001@cluster0.jtxdt.mongodb.net/userDB",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect("/*removed due to privacy breach*/");
 const userschema=new mongoose.Schema({
   email:String,
   password:String
